@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+a{
+  color: rgb(7, 7, 7);
+}
+
+html{
+  text-decoration: none;
+  font-family: 'Poppins', Helvetica, 'Overpass', sans-serif, Arial;
+  scroll-behavior: smooth;
+  font-size: larger;
+}
+
+nav {
+  position: fixed;
+  background-color: white;
+  width: calc(100vw - 2*15px);
+  display: flex;
+  padding: 0px 15px;
+  justify-content: space-between;
+  align-items: center;
+  filter: drop-shadow(0px 0px 4px #e7e7e7);
+}
+
+article{
+  padding-top: 80px;
+  
+  /* padding-bottom: 25px; */
+}
+
+button{
+  border: solid 1px black;
+  background-color: rgb(233, 244, 250);
+  border-radius: 25px;
+  padding: 5px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+button:nth-child(2){
+  border: solid 0px;
+  background-color: rgba(240, 248, 255, 0);
+  filter: opacity(75%);
+}
+
+button:hover{
+  border: solid 1px black;
+  transition: all 0.2s linear;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  justify-content: flex-start;
+  margin: 0px 25px;
+}
+
+input, select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px;
+  resize: vertical 
+}
+
+
+input[type=submit], input[type=reset] {
+  background-color: #5075a0;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #728aa5;
+}
+
+h3, h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+.container{
+  max-width: 600px;
+  min-width: 250px;
+  margin: auto;
+}
+
+.error{
+  color: crimson;
+  font-size: small;
+}
+
+h5{
+  background-color: #b2c8df48;
+  font-size: large;
+}
+
+p{
+  background-color: #c4d7e046;
+  font-size: smaller;
+}
+
+hr{
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.089);
+}
+
+.table{
+  margin: 0px 15px;
+  /* padding: 0px 15px; */
+  border: #C4D7E0 0px solid;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  /* filter: drop-shadow(0px 0px 1px); */
+}
+
+@media (min-width: 760px) {
+  nav {
+    padding: 0px 15px;
+    justify-content: space-around;
+  }
+}
