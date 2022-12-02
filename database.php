@@ -39,7 +39,5 @@ class database {
     mysqli_close($conn);
     return $data;
   }
-
-
 }
 ?>
